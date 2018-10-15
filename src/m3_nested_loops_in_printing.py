@@ -3,8 +3,8 @@ This project demonstrates NESTED LOOPS (i.e., loops within loops)
 in the context of PRINTING on the CONSOLE.
 
 Authors: David Mutchler, Valerie Galluzzi, Mark Hays, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Lauren Smiley.
+"""  # Done: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -35,6 +35,11 @@ def run_test_rectangle_of_stars():
 
 
 def rectangle_of_stars(r, c):
+    string = ''
+    for k in range(c):
+        string = string + '*'
+    for j in range(r):
+        print(string)
     """
     Prints a rectangle of stars (asterisks), with r rows and c columns.
     For example, when r = 3 and c = 5:
@@ -44,7 +49,7 @@ def rectangle_of_stars(r, c):
     Preconditions:  r and c are non-negative integers.
     """
     # ------------------------------------------------------------------
-    # TODO: 2. Implement and test this function.
+    # Done: 2. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     #  *** Unless your instructor directs you otherwise,
@@ -84,6 +89,11 @@ def run_test_triangle_of_stars():
 
 
 def triangle_of_stars(r):
+    for k in range(r):
+        for j in range(k+1):
+            print('*', end='')
+        print()
+
     """
     Prints a triangle of stars (asterisks), with r rows.
       -- The first row is 1 star,
@@ -98,7 +108,7 @@ def triangle_of_stars(r):
     Precondition:  r is a non-negative integer.
     """
     # ------------------------------------------------------------------
-    # TODO: 3. Implement and test this function.
+    # Done: 3. Implement and test this function.
     #          Some tests are already written for you (above).
     #
     #  *** Unless your instructor directs you otherwise,
